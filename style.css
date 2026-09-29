@@ -1,0 +1,282 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background: linear-gradient(135deg, #123c69, #2563a6);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* =========================
+   NAVIGASI
+========================= */
+
+nav {
+    background-color: #0f2f52;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 18px;
+    margin: 0 4px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #2563a6;
+}
+
+/* =========================
+   KONTEN
+========================= */
+
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+main > h1 {
+    text-align: center;
+    color: #123c69;
+    margin-bottom: 25px;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #123c69;
+    margin-bottom: 12px;
+}
+
+section p {
+    margin-bottom: 15px;
+}
+
+section ul {
+    padding-left: 25px;
+}
+
+section li {
+    margin-bottom: 7px;
+}
+
+/* =========================
+   FOTO BANGUNAN SEKOLAH
+========================= */
+
+.foto-sekolah {
+    background-color: white;
+    padding: 15px;
+    margin: 30px auto;
+    max-width: 1100px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.foto-sekolah img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+.foto-sekolah p {
+    text-align: center;
+    margin-top: 10px;
+    color: #666;
+}
+
+/* =========================
+   FORM KONTAK
+========================= */
+
+.form-kontak {
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #2563a6;
+}
+
+form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+form button {
+    background-color: #2563a6;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-right: 8px;
+}
+
+form button:hover {
+    background-color: #123c69;
+}
+
+form button[type="reset"] {
+    background-color: #777;
+}
+
+form button[type="reset"]:hover {
+    background-color: #555;
+}
+
+/* =========================
+   TABEL
+========================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+table th {
+    background-color: #123c69;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f1f5f9;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #0f2f52;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* =========================
+   HR
+========================= */
+
+hr {
+    border: none;
+}
+
+/* =========================
+   RESPONSIVE HP
+========================= */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    main {
+        padding: 0 12px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .foto-sekolah img {
+        height: 250px;
+    }
+
+    form {
+        padding: 20px;
+    }
+}
